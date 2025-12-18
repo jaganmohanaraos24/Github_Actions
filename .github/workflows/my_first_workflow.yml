@@ -6,6 +6,8 @@ jobs:
   my_first_workflow_job:
                 runs-on: ubuntu-latest  
                 steps:
+                    - name: Checkout the Repo
+                      uses: actions/checkout@v6
                     - name: Echo task description
                       run: echo "My firt workflow job"
 
