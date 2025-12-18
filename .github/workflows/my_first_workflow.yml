@@ -9,10 +9,12 @@ jobs:
                     - name: Checkout the Repo
                       uses: actions/checkout@v6
                     - name: Echo task description
-                      run: echo "My firt workflow job"
-
-                    - name: List files
-                      run: ls -la
-      
-                    - name: Read the file README.md
-                      run: cat README.md
+                      run: |
+                        echo "My firt workflow job"
+                        echo " "
+                        ls -lrta
+                        echo " "
+                        cat README.md
+                    - name: Generate ASCII Artwork
+                      run: cowsay -f dragon "Run for cover, I am a DRAGON ... RAWR" >> dragon.txt
+                      
