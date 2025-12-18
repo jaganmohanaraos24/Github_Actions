@@ -4,7 +4,7 @@ on: push
 
 jobs:
   my_first_workflow_job:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Echo task description
         run: echo "My firt workflow job"
