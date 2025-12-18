@@ -1,0 +1,16 @@
+name: My first workflow
+
+on: push
+
+jobs:
+  my_first_workflow_job:
+                runs-on: ubuntu-latest  
+                steps:
+                    - name: Echo task description
+                      run: echo "My firt workflow job"
+
+                    - name: List files
+                      run: ls -la
+      
+                    - name: Read the file README.md
+                      run: cat README.md
