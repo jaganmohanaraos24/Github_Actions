@@ -9,7 +9,9 @@ jobs:
       - name: Checkout Repo 
         uses: actions/checkout@v4
       - name: List repo files 
+        run: ls -lrta
       - name: Execute Shell script to generate ASCII art
         run: |
           chmod +x ascii-script.sh
+          ls -lrta
           ./ascii-script.sh
