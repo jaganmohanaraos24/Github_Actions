@@ -8,5 +8,8 @@ jobs:
     steps:
       - name: Checkout Repo 
         uses: actions/checkout@v4
+      - name: List repo files 
       - name: Execute Shell script to generate ASCII art
-        run: ./ascii-script.sh
+        run: |
+          chmod +x ascii-script.sh
+          ./ascii-script.sh
